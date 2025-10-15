@@ -1,0 +1,64 @@
+.contact-section{
+    padding: 74px 0;
+    background-color: $clr-pink;
+    background-image: url("../../images/contact-bg.svg");
+    background-repeat: no-repeat;
+    // background-size: 160px 200px;
+    background-position: left bottom;
+}
+
+.contact__banner-content {
+    @include Display($items: center, $justify: center, $gap:260px);
+
+}
+.contact__title {
+    @include TextStyle($FW: 700, $FS: 48px, $LH: 48px, $LS: 0px, $CLR: $clr-boldgreen);
+
+}
+.contact__btn {
+    @include BtnStyle($BC: $clr-boldgreen, $P: 10px 32px);
+    transition: all 0.3s ;
+    &:hover{
+        color: $clr-white;
+        background-color: $clr-boldgreen ;
+    }
+    &:active{
+        background-color: transparent;
+        color: $clr-boldgreen;
+        opacity: 0.3;
+    }
+    
+  
+}
+
+@media(max-width:977px){
+    .contact-section{
+        padding: 84px 0;
+        background-size: 180px 130px;
+    }
+    .contact__banner-content {
+        @include Display($items: center, $justify: center, $gap:84px);
+    
+    }
+    .contact__title {
+        @include TextStyle($FW: 700, $FS: 32px, $LH: 32px, $LS: 0px, $CLR: $clr-boldgreen);
+    
+    }
+}
+
+@media(max-width:629px){
+    .contact-section{
+        padding: 83px 0;
+        background-size: 160px 150px;
+    }
+    .contact__banner-content {
+        @include Display($items: center, $justify: center, $gap:24px);
+        flex-direction: column;
+    
+    }
+    .contact__title {
+        width: 327px;
+        text-align: center;
+    
+    }
+}
