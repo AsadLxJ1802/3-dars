@@ -12,7 +12,7 @@
     padding-bottom: 250px;
 }
 .hero__title-wrapper {
-    width: 526px;
+    width: 530px;
 }
 .hero__title {
     @include TextStyle($FW: 700, $FS: 100px, $LH: 100px, $LS: 0px, $CLR: $clr-white);
